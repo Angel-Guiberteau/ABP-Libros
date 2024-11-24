@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.volver button a{
+    text-decoration: none;
+    color: var(--color-azul-oscuro);
+}
+
+.volver button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: var(--color-blanco);
+}
+
+.volver button:hover {
+    cursor: pointer;
+    background-color: var(--color-azul-claro);
+    transition: all 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.508);
+}
+
+.contenedor-recuperar, .contenedor-restablecer {
+    margin-top: 80px;
+}
+
+.contenedor-recuperar h1, .contenedor-restablecer h1 {
+    font-size: 24px;
+}
+
+.contenedor-recuperar h2, .contenedor-restablecer h2 {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.caja-recuperar, .caja-restablecer {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: var(--color-azul-claro);
+}
+
+.boton-google {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+form p {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form > p {
+    color: var(--color-blanco);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form > button[type="submit"]:hover {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.433);
+    transition: all 0.3s;
+}
+
+.logo-google {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    footer {
+        margin-top: 2rem;
+        position: relative;
+        bottom: 0;
+    }
+}

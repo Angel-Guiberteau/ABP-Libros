@@ -1,0 +1,186 @@
+body{
+    color: var(--color-blanco);
+    background-color: var(--color-blanco);
+}
+
+/* Estilo propio del header para esta pagina */
+
+header {
+    background-color: var(--color-admin-oscuro);
+}
+
+nav a:hover {
+    background-color: var(--color-admin);
+}
+
+/****** TOTAL DE LIBROS ******/
+
+/*Boton de añadir, titulo y botones de filtrar y ordenar*/
+.añadir{
+    float: left;
+    text-align: center;
+    background-color: var(--color-admin);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 3vh;
+    border-radius: 5px;
+    margin-left: 2%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.añadir:hover{
+    background-color: var(--color-admin-oscuro);
+}
+
+.titulo-y-controles{
+    width: 100%;
+    margin: 2% auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.tituloTotalLibros{
+    display: block;
+    color: var(--color-azul-oscuro);
+    font-size: 3vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.filtrar, .ordenar{
+    float: right;
+    text-align: center;
+    margin-right: 3%;
+    background-color: var(--color-admin);
+    color: var(--color-blanco);
+    font-size: 2.4vh;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filtrar:hover, .ordenar:hover{
+    background-color: var(--color-admin-oscuro);
+    transition: 0.3s;
+}
+
+/*** Tabla total de libros ***/
+.tablaLibros{
+    width:  80%;
+    border-collapse: collapse;
+    margin: 2% auto;
+    background-color: var(--color-blanco);
+    padding: 1%;
+    border: 1px solid var(--color-azul-medio);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+}
+
+.tablaLibros th, .tablaLibros td{
+    padding: 1%;
+    text-align: center;
+    border: 1px solid var(--color-azul-medio);
+    color: var(--color-azul-oscuro);
+    font-size: 2vh;
+}
+
+.tablaLibros th{
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+/*** Botones de las tablas ***/
+#modificar, #eliminar{
+    padding: 5% 4%;
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    border: none;
+    font-size: 1.8vh;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#modificar:hover, #eliminar:hover{
+    background-color: var(--color-azul-oscuro);
+    transition: 0.3s;
+}
+
+/* Estilos propios del footer para esta pagina */
+
+footer{
+    background-color:var(--color-admin-oscuro);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.colaboradores h2, .contacto h2{
+    color: var(--color-blanco);
+}
+
+.colaboradores p a{
+    color: var(--color-blanco);
+}
+
+.cita p {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .titulo-y-controles{
+        width: 100%;
+        margin: 2% auto;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        box-sizing: border-box; 
+        padding: 0 1%; 
+
+    }
+
+    .añadir{
+        float: left;
+        text-align: center;
+        background-color: var(--color-azul-claro);
+        color: var(--color-blanco);
+        border: none;
+        font-size: 3vh;
+        border-radius: 5px;
+        margin-left: 2%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .tituloTotalLibros{
+        font-size: 2.5vh; 
+    }
+
+    .filtrar, .ordenar{
+        width: 10%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        padding: 10px 20px;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .tablaLibros{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .tablaLibros th, .tablaLibros td{
+        padding: 10px;
+    }
+
+    #modificar, #eliminar {
+        padding: 10px;
+        width: 100%; 
+        margin: 1% 0;
+    }
+
+}

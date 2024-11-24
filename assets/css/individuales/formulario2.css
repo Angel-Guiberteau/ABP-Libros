@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+}
+main>div{
+    position: relative;
+    top:30px;
+    left: 35%;
+    width: 30%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Formulario */
+form{
+    height: fit-content;
+}
+
+input[type="text"], select {
+    width: 100%;
+    border: 1px solid var(--color-azul-oscuro);
+    border-radius: 4px;
+    height: 20px;
+}
+
+input[type="text"]:hover, select:hover {
+    color: white;
+    background-color: var(--color-azul-claro);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#libros label {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#insertar-btn {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#insertar-btn:hover {
+    background-color: #0056b3;
+}
+#botones-navegacion {
+    margin-top: 20px;
+}
+
+#botones-navegacion{
+    text-decoration: none;
+}
+
+#botones-navegacion .botones {
+    width: 45%; 
+    padding: 10px;
+    border: none;
+    background-color: #a5a4a4;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#botones-navegacion .botones:hover {
+    background-color: #696868;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: block;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px; /* Altura del footer */
+    color: var(--color-blanco);
+    background-color: var(--color-blanco);
+}
+
+/* Estilo propio del header para esta pagina */
+
+header {
+    background-color: var(--color-admin-oscuro);
+}
+
+nav a:hover {
+    background-color: var(--color-admin);
+}
+
+
+/***************
+*     Main      *
+***************/
+
+main {
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+}
+
+main > h1 {
+    font-size: 24px;
+}
+
+main > h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contenedor {
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedor > .tarjeta {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor > .tarjeta > .imagen {
+    height: 150px;
+    background-color: #c0c0c0;
+}
+
+.contenedor > .tarjeta:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.contenedor > .tarjeta > h3 {
+    background-color: #e2e2e2;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.contenedor > .tarjeta > button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor > .tarjeta > button > a{
+    color: #333;
+    text-decoration: none;
+}
+
+.contenedor > .tarjeta > button:hover {
+    background-color: var(--color-admin-oscuro);
+    color: var(--color-blanco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.448);
+}
+
+
+
+/* Estilos propios del footer para esta pagina */
+
+footer{
+    background-color:var(--color-admin-oscuro);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.colaboradores h2, .contacto h2{
+    color: var(--color-blanco);
+}
+
+.colaboradores p a{
+    color: var(--color-blanco);
+}
+
+.cita p {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Media Query para tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+
+} 
+
+/* Media Query para moviles */
+
+@media (max-width: 767px) {
+
+    footer{
+        position: relative;
+    }
+
+}
